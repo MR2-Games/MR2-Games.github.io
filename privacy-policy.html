@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – MR2-Games</title>
-  <meta name="description" content="Privacy Policy for all MR2-Games mobile applications.">
+  <title>Datenschutzerklärung / Privacy Policy – MR2-Games</title>
+  <meta name="description" content="Datenschutzerklärung / Privacy Policy for all MR2-Games mobile applications.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .lang-toggle { display:flex; gap:.5rem; justify-content:center; margin:0 0 1.5rem; }
+    .lang-toggle button {
+      padding:.5rem 1.25rem; cursor:pointer; border:1px solid var(--text-muted, #888);
+      background:transparent; color:inherit; border-radius:6px; font-size:.95rem;
+    }
+    .lang-toggle button.active { background:var(--accent, #4a90d9); color:#fff; border-color:transparent; }
+  </style>
 </head>
 <body>
 
@@ -22,237 +30,285 @@
 
   <div class="policy-container">
 
-    <div class="policy-header">
-      <h1>Privacy Policy</h1>
-      <p class="policy-meta">
-        Applies to all MR2-Games applications &nbsp;·&nbsp; Last updated: March 2025
-      </p>
+    <div class="lang-toggle">
+      <button id="btn-de" type="button" onclick="setLang('de')">Deutsch</button>
+      <button id="btn-en" type="button" onclick="setLang('en')">English</button>
     </div>
 
-    <div class="toc">
-      <p>Contents</p>
-      <ol>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#data-collected">Data We Collect</a></li>
-        <li><a href="#google-play-games">Google Sign-In &amp; Google Play Games</a></li>
-        <li><a href="#advertising">Advertising (AdMob)</a></li>
-        <li><a href="#in-app-purchases">In-App Purchases</a></li>
-        <li><a href="#analytics">Analytics</a></li>
-        <li><a href="#data-retention">Data Retention &amp; Deletion</a></li>
-        <li><a href="#childrens-privacy">Children's Privacy</a></li>
-        <li><a href="#your-rights">Your Rights (GDPR)</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ol>
-    </div>
+    <!-- ================= DEUTSCH ================= -->
+    <div id="policy-de" lang="de">
 
-    <!-- 1 -->
-    <div class="policy-section" id="overview">
-      <h2>1. Overview</h2>
-      <p>
-        MR2-Games ("we", "us", "our") operates mobile games available on Google Play.
-        This Privacy Policy explains what data we collect, why, and how you can control it.
-      </p>
-      <p>
-        This policy applies to all MR2-Games applications, including <strong>TastyMeats</strong>
-        and any future titles published under this developer account.
-      </p>
-      <div class="highlight-box">
-        We do not sell your personal data. We do not use your data for purposes beyond
-        what is described in this policy.
+      <div class="policy-header">
+        <h1>Datenschutzerklärung</h1>
+        <p class="policy-meta">
+          Gilt für alle MR2-Games-Anwendungen &nbsp;·&nbsp; Stand: Mai 2026
+        </p>
       </div>
-    </div>
 
-    <!-- 2 -->
-    <div class="policy-section" id="data-collected">
-      <h2>2. Data We Collect</h2>
-      <p>Depending on which features you use, the following types of data may be collected:</p>
-
-      <h3>Automatically Collected</h3>
-      <ul>
-        <li><strong>Device &amp; Advertising ID</strong> – collected by Google AdMob for ad delivery (see section 4)</li>
-        <li><strong>Crash logs &amp; diagnostics</strong> – collected automatically to help us fix bugs</li>
-        <li><strong>App performance data</strong> – e.g. frame rate, load times</li>
-      </ul>
-
-      <h3>With Your Consent</h3>
-      <ul>
-        <li><strong>Gameplay analytics</strong> – level attempts, scores, power-up usage, session duration.
-        Stored locally on your device. Only aggregated and anonymised data is used for game balancing.</li>
-      </ul>
-
-      <h3>When You Sign In</h3>
-      <ul>
-        <li><strong>Google Play Games Player ID</strong> – a unique identifier assigned by Google to your Play Games account,
-        used to save and restore your game progress across devices</li>
-        <li><strong>Display name</strong> – your Google Play Games display name, shown in-game</li>
-      </ul>
-
-      <h3>When You Make a Purchase</h3>
-      <ul>
-        <li><strong>Purchase history</strong> – a record of in-app purchases (e.g. boosters, "No Ads"),
-        processed by Google Play Billing. We do not receive your payment details.</li>
-      </ul>
-
-      <p>We do <strong>not</strong> collect your name, email address, phone number, location, contacts, camera, or microphone data.</p>
-    </div>
-
-    <!-- 3 -->
-    <div class="policy-section" id="google-play-games">
-      <h2>3. Google Sign-In &amp; Google Play Games</h2>
-      <p>
-        Our games offer optional sign-in via <strong>Google Play Games Services</strong>. Signing in allows your
-        game progress to be saved to Google's cloud and restored if you reinstall the game or switch devices.
-      </p>
-      <p>
-        When you sign in, we access your Google Play Games <strong>Player ID</strong> and <strong>display name</strong>.
-        This data is used solely to identify your save data. We do not access your Google account email or any
-        other Google account information.
-      </p>
-      <p>
-        Sign-in is optional. You can play without signing in; your progress will be saved locally on your device only.
-      </p>
-      <p>
-        Google's privacy policy applies to data processed by Google Play Games Services:
-        <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
-      </p>
-    </div>
-
-    <!-- 4 -->
-    <div class="policy-section" id="advertising">
-      <h2>4. Advertising (AdMob)</h2>
-      <p>
-        Our games display ads served by <strong>Google AdMob</strong>, a service operated by Google LLC.
-        AdMob may collect and use your device's <strong>Advertising ID</strong> and other identifiers
-        to serve relevant ads and measure ad performance.
-      </p>
-
-      <h3>Types of Ads</h3>
-      <ul>
-        <li><strong>Interstitial ads</strong> – shown periodically between game sessions</li>
-        <li><strong>Rewarded ads</strong> – optional ads you can watch to receive in-game benefits (e.g. continue after a game over)</li>
-      </ul>
-
-      <h3>Your Choices</h3>
-      <ul>
-        <li>You will be shown a consent prompt before personalised ads are displayed (EU/EEA users)</li>
-        <li>You can opt out of personalised ads in your device settings: <em>Settings → Google → Ads → Opt out of Ads Personalisation</em></li>
-        <li>You can purchase "Remove Ads" to permanently remove all advertising from the game</li>
-      </ul>
-
-      <p>
-        AdMob's privacy policy:
-        <a href="https://support.google.com/admob/answer/6128543" target="_blank">support.google.com/admob</a>
-      </p>
-    </div>
-
-    <!-- 5 -->
-    <div class="policy-section" id="in-app-purchases">
-      <h2>5. In-App Purchases</h2>
-      <p>
-        Some of our games offer optional in-app purchases (e.g. booster packs, "Remove Ads").
-        All purchases are processed securely by <strong>Google Play Billing</strong>.
-        We do not receive or store your payment card details.
-      </p>
-      <p>
-        We retain a record of which purchases you have made in order to restore them if you reinstall the app.
-        This purchase history is stored by Google Play and can be accessed via your Google account.
-      </p>
-      <p>
-        Purchases are non-refundable except as required by applicable law or Google Play's refund policy.
-      </p>
-    </div>
-
-    <!-- 6 -->
-    <div class="policy-section" id="analytics">
-      <h2>6. Analytics</h2>
-      <p>
-        Our games include an optional, privacy-friendly analytics system. Analytics help us understand
-        how players interact with the game so we can improve difficulty balancing and the overall experience.
-      </p>
-      <div class="highlight-box">
-        Analytics are <strong>opt-in only</strong>. You will be asked for consent before any analytics
-        data is collected. You can change your preference at any time in the in-game settings.
+      <div class="policy-section" id="de-ueberblick">
+        <h2>1. Überblick</h2>
+        <p>
+          Diese Datenschutzerklärung gilt für alle MR2-Games-Apps, einschließlich
+          <strong>TastyMeats</strong>, und erklärt, welche Daten wir verarbeiten, zu welchem
+          Zweck und auf welcher Rechtsgrundlage.
+        </p>
+        <div class="highlight-box">
+          Grundsatz: Spielst du <strong>ohne Anmeldung</strong>, bleiben deine Daten
+          <strong>ausschließlich lokal auf deinem Gerät</strong>. Erst wenn du dich
+          freiwillig mit Google anmeldest, werden Spielstände in unserer Cloud gespeichert.
+        </div>
       </div>
-      <p>Analytics data collected (with consent) includes:</p>
-      <ul>
-        <li>Level attempts, completions, scores, and star ratings</li>
-        <li>Power-up usage</li>
-        <li>Session start and end times</li>
-        <li>Number of matches and special pieces created</li>
-      </ul>
-      <p>
-        This data is stored <strong>locally on your device</strong> in JSON format.
-        It is not transmitted to external servers. You can view or delete your analytics data
-        at any time in the Privacy Settings screen within the game.
-      </p>
-    </div>
 
-    <!-- 7 -->
-    <div class="policy-section" id="data-retention">
-      <h2>7. Data Retention &amp; Deletion</h2>
-      <p>
-        Local analytics data is stored on your device until you delete it.
-        You can delete all locally stored data at any time through the in-game
-        <strong>Settings → Privacy</strong> screen.
-      </p>
-      <p>
-        For data held by third parties (Google Play Games save data, AdMob, Google Play purchases),
-        please refer to Google's data deletion tools:
-        <a href="https://myaccount.google.com/data-and-privacy" target="_blank">myaccount.google.com/data-and-privacy</a>
-      </p>
-      <p>
-        To request deletion of any data associated with your account, contact us at:
-        <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>
-      </p>
-    </div>
-
-    <!-- 8 -->
-    <div class="policy-section" id="childrens-privacy">
-      <h2>8. Children's Privacy</h2>
-      <p>
-        Our games are rated for general audiences (PEGI 3 / Everyone). We do not knowingly collect
-        personal information from children under the age of 13.
-      </p>
-      <p>
-        If you are a parent or guardian and believe your child has provided personal information to us,
-        please contact us at <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>
-        and we will delete the information promptly.
-      </p>
-    </div>
-
-    <!-- 9 -->
-    <div class="policy-section" id="your-rights">
-      <h2>9. Your Rights (GDPR)</h2>
-      <p>If you are located in the European Economic Area (EEA), you have the following rights:</p>
-      <ul>
-        <li><strong>Right of access</strong> – request a copy of data we hold about you</li>
-        <li><strong>Right to rectification</strong> – request correction of inaccurate data</li>
-        <li><strong>Right to erasure</strong> – request deletion of your personal data</li>
-        <li><strong>Right to object</strong> – object to processing of your data for advertising purposes</li>
-        <li><strong>Right to withdraw consent</strong> – withdraw your analytics or advertising consent at any time in-game</li>
-      </ul>
-      <p>
-        To exercise any of these rights, contact us at
-        <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.
-        We will respond within 30 days.
-      </p>
-    </div>
-
-    <!-- 10 -->
-    <div class="policy-section" id="contact">
-      <h2>10. Contact</h2>
-      <p>If you have any questions about this Privacy Policy, please contact us:</p>
-      <div class="contact-box">
-        <p><strong>MR2-Games</strong></p>
-        <p>Email: <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/MR2-Games" target="_blank">github.com/MR2-Games</a></p>
+      <div class="policy-section" id="de-verantwortlicher">
+        <h2>2. Verantwortlicher</h2>
+        <p>
+          Verantwortlich im Sinne der DSGVO ist der Betreiber von MR2-Games.
+          Name und ladungsfähige Anschrift findest du im
+          <a href="imprint.html">Impressum</a>. Kontakt:
+          <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.
+        </p>
       </div>
-      <p style="margin-top:1.5rem; color: var(--text-muted); font-size:.875rem;">
-        We may update this Privacy Policy from time to time. The "Last updated" date at the top of this
-        page indicates when the policy was last revised. Continued use of our games after changes
-        constitutes acceptance of the updated policy.
-      </p>
-    </div>
+
+      <div class="policy-section" id="de-daten">
+        <h2>3. Welche Daten wir verarbeiten</h2>
+
+        <h3>a) Ohne Anmeldung – nur lokal auf deinem Gerät</h3>
+        <ul>
+          <li><strong>Spielstand</strong> (freigeschaltete Level, Punkte, Sterne, Statistiken) und Einstellungen.</li>
+          <li><strong>Optionale Spiel-Analytics</strong> (Level-Versuche, Punkte, Sternebewertungen, Spieldauer, Power-up-Nutzung) – nur nach deiner Einwilligung, ausschließlich lokal gespeichert und <strong>nicht</strong> an uns übertragen.</li>
+        </ul>
+
+        <h3>b) Bei Anmeldung mit Google (optional)</h3>
+        <ul>
+          <li><strong>Anmeldung</strong>: Google stellt uns über Firebase Authentication deine <strong>E-Mail-Adresse</strong> zur Authentifizierung bereit.</li>
+          <li><strong>Cloud-Speicherung deines Fortschritts</strong>: Dein Spielfortschritt (Level, Punkte, Sterne, Statistiken) wird in unserer Datenbank <strong>Google Firebase Firestore</strong> (Server in der EU) unter einer Konto-Kennung gespeichert, damit du ihn auf anderen Geräten wiederherstellen kannst.</li>
+        </ul>
+
+        <h3>c) Werbung (Google AdMob)</h3>
+        <ul>
+          <li>Zur Auslieferung von Werbung verarbeitet Google AdMob die <strong>Werbe-ID</strong> deines Geräts und Interaktionsdaten. Im EWR fragen wir dazu vorab deine Einwilligung über ein Google-Consent-Formular ab (siehe Abschnitt 7).</li>
+        </ul>
+
+        <h3>d) Weitere Dienste</h3>
+        <ul>
+          <li><strong>Absturzberichte/Diagnose</strong> (Google Firebase Crashlytics) zur Fehlerbehebung.</li>
+          <li><strong>Käufe</strong> werden über Google Play Billing abgewickelt; Zahlungsdaten erhalten wir nicht.</li>
+          <li><strong>Konfiguration</strong> (Firebase Remote Config) zum Steuern von Spielparametern.</li>
+        </ul>
+      </div>
+
+      <div class="policy-section" id="de-rechtsgrundlagen">
+        <h2>4. Rechtsgrundlagen</h2>
+        <ul>
+          <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO): optionale Analytics und personalisierte Werbung.</li>
+          <li><strong>Vertrag/Leistungserbringung</strong> (Art. 6 Abs. 1 lit. b): Cloud-Speicherung, die du durch die Anmeldung aktiv anforderst.</li>
+          <li><strong>Berechtigtes Interesse</strong> (Art. 6 Abs. 1 lit. f): stabiler, fehlerfreier Betrieb (Absturzberichte, anonyme Authentifizierung).</li>
+        </ul>
+      </div>
+
+      <div class="policy-section" id="de-empfaenger">
+        <h2>5. Empfänger &amp; Datenübermittlung in die USA</h2>
+        <p>
+          Wir nutzen Dienste von <strong>Google</strong> (Firebase Authentication, Firestore,
+          AdMob, Crashlytics, Play Billing, Remote Config). Dabei können Daten in die
+          <strong>USA</strong> übermittelt und dort verarbeitet werden. Google stützt diese
+          Übermittlung u. a. auf die EU-Standardvertragsklauseln. Es gelten zusätzlich die
+          Datenschutzbestimmungen von Google:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+        </p>
+      </div>
+
+      <div class="policy-section" id="de-speicherung">
+        <h2>6. Speicherung &amp; Löschung</h2>
+        <ul>
+          <li><strong>Lokale Daten</strong> bleiben gespeichert, bis du sie löschst oder die App deinstallierst.</li>
+          <li><strong>Cloud-Daten</strong> (bei Anmeldung) bleiben gespeichert, bis du sie löschst.</li>
+          <li>Im Spiel unter <strong>Einstellungen → Datenschutz</strong> kannst du deine lokalen Daten und – falls angemeldet – deine Cloud-Daten löschen. Alternativ genügt eine Nachricht an
+            <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.</li>
+        </ul>
+      </div>
+
+      <div class="policy-section" id="de-rechte">
+        <h2>7. Deine Rechte</h2>
+        <p>Dir stehen nach der DSGVO insbesondere zu:</p>
+        <ul>
+          <li>Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20).</li>
+          <li>Widerspruch gegen Verarbeitungen auf Basis berechtigter Interessen (Art. 21).</li>
+          <li><strong>Widerruf erteilter Einwilligungen</strong> jederzeit mit Wirkung für die Zukunft (Analytics und Werbung in den Einstellungen).</li>
+          <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde.</li>
+        </ul>
+        <p>
+          Kontakt zur Ausübung deiner Rechte:
+          <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>
+          (Antwort i. d. R. innerhalb von 30 Tagen).
+        </p>
+      </div>
+
+      <div class="policy-section" id="de-werbung">
+        <h2>8. Werbe-Einwilligung (UMP)</h2>
+        <p>
+          Im EWR/UK/CH zeigen wir beim Start ein von Google bereitgestelltes
+          Consent-Formular (User Messaging Platform). Stimmst du zu, erhältst du
+          personalisierte Werbung; lehnst du ab, erhältst du
+          <strong>nicht-personalisierte Werbung</strong>. Deine Auswahl kannst du in den
+          Geräteeinstellungen unter „Google → Anzeigen" anpassen.
+        </p>
+      </div>
+
+      <div class="policy-section" id="de-kinder">
+        <h2>9. Kinder</h2>
+        <p>
+          Unsere Spiele richten sich an ein allgemeines Publikum. Wir erheben nicht
+          wissentlich personenbezogene Daten von Kindern unter 16 Jahren. Wende dich bei
+          Bedenken an <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.
+        </p>
+      </div>
+
+      <div class="policy-section" id="de-aenderungen">
+        <h2>10. Änderungen</h2>
+        <p>
+          Wir können diese Erklärung anpassen. Das Datum „Stand" oben zeigt die letzte
+          Aktualisierung.
+        </p>
+      </div>
+
+    </div><!-- /policy-de -->
+
+    <!-- ================= ENGLISH ================= -->
+    <div id="policy-en" lang="en">
+
+      <div class="policy-header">
+        <h1>Privacy Policy</h1>
+        <p class="policy-meta">
+          Applies to all MR2-Games applications &nbsp;·&nbsp; Last updated: May 2026
+        </p>
+      </div>
+
+      <div class="policy-section" id="en-overview">
+        <h2>1. Overview</h2>
+        <p>
+          This Privacy Policy applies to all MR2-Games apps, including
+          <strong>TastyMeats</strong>, and explains what data we process, why, and on what
+          legal basis.
+        </p>
+        <div class="highlight-box">
+          Principle: if you play <strong>without signing in</strong>, your data stays
+          <strong>only on your device</strong>. Game progress is stored in our cloud only
+          once you voluntarily sign in with Google.
+        </div>
+      </div>
+
+      <div class="policy-section" id="en-controller">
+        <h2>2. Data Controller</h2>
+        <p>
+          The controller under the GDPR is the operator of MR2-Games. Name and postal
+          address are listed in the <a href="imprint.html">Imprint</a>. Contact:
+          <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.
+        </p>
+      </div>
+
+      <div class="policy-section" id="en-data">
+        <h2>3. What Data We Process</h2>
+
+        <h3>a) Without signing in — local on your device only</h3>
+        <ul>
+          <li><strong>Game progress</strong> (unlocked levels, scores, stars, statistics) and settings.</li>
+          <li><strong>Optional gameplay analytics</strong> (level attempts, scores, star ratings, play time, power-up usage) — only with your consent, stored locally only and <strong>not</strong> transmitted to us.</li>
+        </ul>
+
+        <h3>b) When you sign in with Google (optional)</h3>
+        <ul>
+          <li><strong>Sign-in</strong>: via Firebase Authentication, Google provides your <strong>email address</strong> to authenticate you.</li>
+          <li><strong>Cloud storage of your progress</strong>: your game progress (levels, scores, stars, statistics) is stored in our <strong>Google Firebase Firestore</strong> database (servers in the EU) under an account identifier, so it can be restored on other devices.</li>
+        </ul>
+
+        <h3>c) Advertising (Google AdMob)</h3>
+        <ul>
+          <li>To serve ads, Google AdMob processes your device's <strong>advertising ID</strong> and interaction data. In the EEA we ask for your consent first via a Google consent form (see section 7).</li>
+        </ul>
+
+        <h3>d) Other services</h3>
+        <ul>
+          <li><strong>Crash reports/diagnostics</strong> (Google Firebase Crashlytics) to fix problems.</li>
+          <li><strong>Purchases</strong> are handled by Google Play Billing; we do not receive payment details.</li>
+          <li><strong>Configuration</strong> (Firebase Remote Config) to control game parameters.</li>
+        </ul>
+      </div>
+
+      <div class="policy-section" id="en-legal-bases">
+        <h2>4. Legal Bases</h2>
+        <ul>
+          <li><strong>Consent</strong> (Art. 6(1)(a) GDPR): optional analytics and personalised ads.</li>
+          <li><strong>Contract / service</strong> (Art. 6(1)(b)): cloud storage that you actively request by signing in.</li>
+          <li><strong>Legitimate interest</strong> (Art. 6(1)(f)): stable, error-free operation (crash reports, anonymous authentication).</li>
+        </ul>
+      </div>
+
+      <div class="policy-section" id="en-recipients">
+        <h2>5. Recipients &amp; International Transfer (USA)</h2>
+        <p>
+          We use services from <strong>Google</strong> (Firebase Authentication, Firestore,
+          AdMob, Crashlytics, Play Billing, Remote Config). Data may be transferred to and
+          processed in the <strong>USA</strong>. Google relies on the EU Standard Contractual
+          Clauses, among other safeguards. Google's privacy terms also apply:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+        </p>
+      </div>
+
+      <div class="policy-section" id="en-retention">
+        <h2>6. Storage &amp; Deletion</h2>
+        <ul>
+          <li><strong>Local data</strong> is kept until you delete it or uninstall the app.</li>
+          <li><strong>Cloud data</strong> (if signed in) is kept until you delete it.</li>
+          <li>In-game under <strong>Settings → Privacy</strong> you can delete your local data and — if signed in — your cloud data. Alternatively, email
+            <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.</li>
+        </ul>
+      </div>
+
+      <div class="policy-section" id="en-rights">
+        <h2>7. Your Rights</h2>
+        <p>Under the GDPR you have, in particular:</p>
+        <ul>
+          <li>Access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), portability (Art. 20).</li>
+          <li>Objection to processing based on legitimate interests (Art. 21).</li>
+          <li><strong>Withdrawal of consent</strong> at any time with future effect (analytics and ads in the settings).</li>
+          <li>Right to lodge a complaint with a data protection supervisory authority.</li>
+        </ul>
+        <p>
+          To exercise your rights, contact
+          <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>
+          (we usually respond within 30 days).
+        </p>
+      </div>
+
+      <div class="policy-section" id="en-ads-consent">
+        <h2>8. Ad Consent (UMP)</h2>
+        <p>
+          In the EEA/UK/CH we show a Google-provided consent form (User Messaging Platform)
+          at startup. If you consent, you receive personalised ads; if you decline, you
+          receive <strong>non-personalised ads</strong>. You can adjust your choice in your
+          device settings under "Google → Ads".
+        </p>
+      </div>
+
+      <div class="policy-section" id="en-children">
+        <h2>9. Children</h2>
+        <p>
+          Our games are intended for a general audience. We do not knowingly collect
+          personal data from children under 16. If you have concerns, contact
+          <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.
+        </p>
+      </div>
+
+      <div class="policy-section" id="en-changes">
+        <h2>10. Changes</h2>
+        <p>
+          We may update this policy. The "Last updated" date above indicates the latest
+          revision.
+        </p>
+      </div>
+
+    </div><!-- /policy-en -->
 
   </div><!-- /policy-container -->
 
@@ -262,10 +318,27 @@
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="imprint.html">Imprint</a>
       <a href="mailto:mr2games.mobile@gmail.com">Contact</a>
-      <a href="https://github.com/MR2-Games" target="_blank">GitHub</a>
+      <a href="https://github.com/MR2-Games" target="_blank" rel="noopener">GitHub</a>
     </div>
     <p>&copy; 2026 MR2-Games. All rights reserved.</p>
   </footer>
+
+  <script>
+    function setLang(l) {
+      document.getElementById('policy-de').style.display = (l === 'de') ? 'block' : 'none';
+      document.getElementById('policy-en').style.display = (l === 'en') ? 'block' : 'none';
+      document.getElementById('btn-de').classList.toggle('active', l === 'de');
+      document.getElementById('btn-en').classList.toggle('active', l === 'en');
+      try { localStorage.setItem('mr2_policy_lang', l); } catch (e) {}
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      var saved = 'de';
+      try { saved = localStorage.getItem('mr2_policy_lang') || 'de'; } catch (e) {}
+      // Browser-Sprache als Default, falls noch keine Auswahl gespeichert ist.
+      if (!saved && navigator.language && navigator.language.slice(0, 2) === 'en') saved = 'en';
+      setLang(saved);
+    });
+  </script>
 
 </body>
 </html>
