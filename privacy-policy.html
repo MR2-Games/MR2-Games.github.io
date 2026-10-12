@@ -54,8 +54,8 @@
         <div class="highlight-box">
           Grundsatz: Spielst du <strong>ohne Anmeldung</strong>, bleibt dein Spielstand
           <strong>ausschließlich auf deinem Gerät</strong>. Erst wenn du dich freiwillig
-          mit Google anmeldest, wird er in unserer Cloud gespeichert. Spielanalysen gehen
-          nur mit deiner Einwilligung und pseudonym an Google Firebase.
+          mit Google anmeldest, wird er in unserer Cloud gespeichert. Spielanalysen und
+          die Level-Statistik gehen nur mit deiner Einwilligung und pseudonym an Google Firebase.
         </div>
       </div>
 
@@ -80,7 +80,8 @@
         <h3>b) Spielanalysen (optional, nur mit deiner Einwilligung)</h3>
         <ul>
           <li>Stimmst du im Spiel zu, senden wir Spieldaten (Level-Versuche, Punkte, Sternebewertungen, Spieldauer, Power-up-Nutzung) <strong>pseudonym</strong> an <strong>Google Firebase Analytics</strong>. Dazu gehören eine zufällige Gerätekennung und grobe Geräteangaben wie Modell, Android-Version, Sprache und Land, aber <strong>kein Name und keine E-Mail-Adresse</strong>. Wir werten die Daten nur zusammengefasst aus, um Schwierigkeit und Level zu verbessern.</li>
-          <li>Ohne deine Zustimmung ist die Erfassung abgeschaltet. Du kannst die Einwilligung jederzeit unter <strong>Einstellungen → Datenschutz</strong> widerrufen; dabei wird die Gerätekennung zurückgesetzt.</li>
+          <li><strong>Level-Statistik</strong>: Mit derselben Einwilligung speichern wir zusätzlich das Ergebnis jedes Level-Versuchs (Level, Ausgang, Punkte, Züge, Matches, geknacktes Eis, gebaute Spezialsteine, eingesetzte Booster, Stand der automatischen Schwierigkeitsanpassung, Spieldauer, App-Version, Plattform und Datum ohne Uhrzeit) in <strong>Google Firebase Firestore</strong> (Server in der EU). Die Einträge tragen nur eine <strong>zufällige Nummer</strong>, die die App auf deinem Gerät erzeugt. Sie ist <strong>nicht mit deinem Google-Konto, deiner E-Mail-Adresse oder der Gerätekennung von Firebase Analytics verknüpft</strong>. Wir nutzen die Daten ausschließlich zusammengefasst je Level, um die Schwierigkeit zu verbessern.</li>
+          <li>Ohne deine Zustimmung ist die Erfassung abgeschaltet. Du kannst die Einwilligung jederzeit unter <strong>Einstellungen → Datenschutz</strong> widerrufen; dabei wird die Gerätekennung zurückgesetzt, und die App löscht alle Einträge deiner Level-Statistik und verwirft die zufällige Nummer.</li>
         </ul>
 
         <h3>c) Bei Anmeldung mit Google (optional)</h3>
@@ -105,7 +106,7 @@
       <div class="policy-section" id="de-rechtsgrundlagen">
         <h2>4. Rechtsgrundlagen</h2>
         <ul>
-          <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO): optionale Analytics und personalisierte Werbung.</li>
+          <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO): optionale Analytics einschließlich Level-Statistik und personalisierte Werbung.</li>
           <li><strong>Vertrag/Leistungserbringung</strong> (Art. 6 Abs. 1 lit. b): Cloud-Speicherung, die du durch die Anmeldung aktiv anforderst.</li>
           <li><strong>Berechtigtes Interesse</strong> (Art. 6 Abs. 1 lit. f): stabiler, fehlerfreier Betrieb (Absturzberichte, anonyme Authentifizierung).</li>
         </ul>
@@ -129,7 +130,8 @@
           <li><strong>Lokale Daten</strong> bleiben gespeichert, bis du sie löschst oder die App deinstallierst.</li>
           <li><strong>Cloud-Daten</strong> (bei Anmeldung) bleiben gespeichert, bis du sie löschst.</li>
           <li><strong>Spielanalysen</strong> (bei Einwilligung) speichert Google gemäß der für das Projekt eingestellten Aufbewahrungsfrist in Google Analytics. Ein Widerruf beendet die Erfassung und setzt die Gerätekennung zurück.</li>
-          <li>Im Spiel unter <strong>Einstellungen → Datenschutz</strong> kannst du deine lokalen Daten und – falls angemeldet – deine Cloud-Daten löschen. Alternativ genügt eine Nachricht an
+          <li><strong>Level-Statistik</strong> (bei Einwilligung) löschen wir nach spätestens 12 Monaten; bei Widerruf oder über „Alle meine Daten löschen" sofort.</li>
+          <li>Im Spiel unter <strong>Einstellungen → Datenschutz</strong> kannst du deine lokalen Daten, deine Level-Statistik und – falls angemeldet – deine Cloud-Daten löschen. Alternativ genügt eine Nachricht an
             <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.</li>
         </ul>
       </div>
@@ -200,8 +202,8 @@
         <div class="highlight-box">
           Principle: if you play <strong>without signing in</strong>, your game progress
           stays <strong>only on your device</strong>. It is stored in our cloud only once you
-          voluntarily sign in with Google. Gameplay analytics are sent to Google Firebase
-          only with your consent and pseudonymously.
+          voluntarily sign in with Google. Gameplay analytics and level statistics are sent
+          to Google Firebase only with your consent and pseudonymously.
         </div>
       </div>
 
@@ -225,7 +227,8 @@
         <h3>b) Gameplay analytics (optional, only with your consent)</h3>
         <ul>
           <li>If you agree in the game, we send gameplay data (level attempts, scores, star ratings, play time, power-up usage) <strong>pseudonymously</strong> to <strong>Google Firebase Analytics</strong>. This includes a random device identifier and basic device information such as model, Android version, language and country, but <strong>no name and no email address</strong>. We only evaluate the data in aggregate to improve difficulty and levels.</li>
-          <li>Without your consent, collection is switched off. You can withdraw your consent at any time under <strong>Settings → Privacy</strong>; this also resets the device identifier.</li>
+          <li><strong>Level statistics</strong>: with the same consent we also store the result of each level attempt (level, outcome, score, moves, matches, ice cracked, special pieces built, boosters used, state of the automatic difficulty adjustment, play time, app version, platform and date without time) in <strong>Google Firebase Firestore</strong> (servers in the EU). The entries only carry a <strong>random number</strong> that the app creates on your device. It is <strong>not linked to your Google account, your email address or the Firebase Analytics device identifier</strong>. We only use the data in aggregate per level to improve difficulty.</li>
+          <li>Without your consent, collection is switched off. You can withdraw your consent at any time under <strong>Settings → Privacy</strong>; this also resets the device identifier, and the app deletes all entries of your level statistics and discards the random number.</li>
         </ul>
 
         <h3>c) When you sign in with Google (optional)</h3>
@@ -250,7 +253,7 @@
       <div class="policy-section" id="en-legal-bases">
         <h2>4. Legal Bases</h2>
         <ul>
-          <li><strong>Consent</strong> (Art. 6(1)(a) GDPR): optional analytics and personalised ads.</li>
+          <li><strong>Consent</strong> (Art. 6(1)(a) GDPR): optional analytics including level statistics, and personalised ads.</li>
           <li><strong>Contract / service</strong> (Art. 6(1)(b)): cloud storage that you actively request by signing in.</li>
           <li><strong>Legitimate interest</strong> (Art. 6(1)(f)): stable, error-free operation (crash reports, anonymous authentication).</li>
         </ul>
@@ -273,7 +276,8 @@
           <li><strong>Local data</strong> is kept until you delete it or uninstall the app.</li>
           <li><strong>Cloud data</strong> (if signed in) is kept until you delete it.</li>
           <li><strong>Gameplay analytics</strong> (if you consented) are kept by Google according to the retention period set for the project in Google Analytics. Withdrawing consent stops collection and resets the device identifier.</li>
-          <li>In-game under <strong>Settings → Privacy</strong> you can delete your local data and — if signed in — your cloud data. Alternatively, email
+          <li><strong>Level statistics</strong> (if you consented) are deleted after 12 months at the latest; immediately if you withdraw consent or use "Delete All My Data".</li>
+          <li>In-game under <strong>Settings → Privacy</strong> you can delete your local data, your level statistics and — if signed in — your cloud data. Alternatively, email
             <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.</li>
         </ul>
       </div>
