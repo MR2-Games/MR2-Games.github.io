@@ -40,7 +40,7 @@
       <div class="policy-header">
         <h1>Datenschutzerklärung</h1>
         <p class="policy-meta">
-          Gilt für alle Anwendungen von MR2 Games &nbsp;·&nbsp; Stand: Oktober 2026
+          Gilt für alle Anwendungen von MR2 Games &nbsp;·&nbsp; Stand: November 2026
         </p>
       </div>
 
@@ -79,8 +79,9 @@
 
         <h3>b) Spielanalysen (optional, nur mit deiner Einwilligung)</h3>
         <ul>
-          <li>Stimmst du im Spiel zu, senden wir Spieldaten (Level-Versuche, Punkte, Sternebewertungen, Spieldauer, Power-up-Nutzung) <strong>pseudonym</strong> an <strong>Google Firebase Analytics</strong>. Dazu gehören eine zufällige Gerätekennung und grobe Geräteangaben wie Modell, Android-Version, Sprache und Land, aber <strong>kein Name und keine E-Mail-Adresse</strong>. Wir werten die Daten nur zusammengefasst aus, um Schwierigkeit und Level zu verbessern.</li>
-          <li><strong>Level-Statistik</strong>: Mit derselben Einwilligung speichern wir zusätzlich das Ergebnis jedes Level-Versuchs (Level, Ausgang, Punkte, Züge, Matches, geknacktes Eis, gebaute Spezialsteine, eingesetzte Booster, Stand der automatischen Schwierigkeitsanpassung, Spieldauer, App-Version, Plattform und Datum ohne Uhrzeit) in <strong>Google Firebase Firestore</strong> (Server in der EU). Die Einträge tragen nur eine <strong>zufällige Nummer</strong>, die die App auf deinem Gerät erzeugt. Sie ist <strong>nicht mit deinem Google-Konto, deiner E-Mail-Adresse oder der Gerätekennung von Firebase Analytics verknüpft</strong>. Wir nutzen die Daten ausschließlich zusammengefasst je Level, um die Schwierigkeit zu verbessern.</li>
+          <li>Stimmst du im Spiel zu, senden wir Spieldaten <strong>pseudonym</strong> an <strong>Google Firebase Analytics</strong>: Level-Versuche, Punkte, Sternebewertungen, Spieldauer, eingesetzte Booster, ob dir zusätzliche Züge per Video angeboten wurden und ob du sie genommen hast, welche Videos du dir ansiehst, wann du den Shop öffnest und welche Angebote du siehst, dazu die Dauer deiner Spielsitzungen und den Abstand zwischen ihnen (ohne Uhrzeit). Dazu gehören eine zufällige Gerätekennung und grobe Geräteangaben wie Modell, Android-Version, Sprache und Land, aber <strong>kein Name und keine E-Mail-Adresse</strong>.</li>
+          <li><strong>Level-Statistik</strong>: Mit derselben Einwilligung speichern wir zusätzlich jeden Level-Versuch in <strong>Google Firebase Firestore</strong> (Server in der EU): Level, Ausgang, Punkte, Züge, Matches, geknacktes Eis, gebaute Spezialsteine, eingesetzte Booster, zusätzliche Züge, Stand der automatischen Schwierigkeitsanpassung, Spieldauer, App-Version, Plattform und Datum ohne Uhrzeit, außerdem <strong>die Züge des Versuchs</strong> (welches Feld in welche Richtung, Bedenkzeit, ob ein Hinweis kam, eingesetzte Booster und ihr Ziel) und den Startwert des Zufalls. Damit können wir einen Versuch in einer Simulation nachspielen. Geht die App mitten in einem Versuch zu, merkt sie ihn sich auf deinem Gerät und sendet ihn beim nächsten Level-Start. Die Einträge tragen nur eine <strong>zufällige Nummer</strong>, die die App auf deinem Gerät erzeugt. Sie ist <strong>nicht mit deinem Google-Konto, deiner E-Mail-Adresse oder der Gerätekennung von Firebase Analytics verknüpft</strong>.</li>
+          <li><strong>Zweck</strong>: Wir nutzen beides, um das Spiel zu verbessern: Schwierigkeit, Restaurant, Angebote und Werbung. Dazu werten wir die Daten zusammengefasst aus und lassen Computer-Spieler so spielen wie echte Spieler, um neue Level vorab abzustimmen. Für personalisierte Werbung nutzen wir diese Daten nicht.</li>
           <li>Ohne deine Zustimmung ist die Erfassung abgeschaltet. Du kannst die Einwilligung jederzeit unter <strong>Einstellungen → Datenschutz</strong> widerrufen; dabei wird die Gerätekennung zurückgesetzt, und die App löscht alle Einträge deiner Level-Statistik und verwirft die zufällige Nummer.</li>
         </ul>
 
@@ -92,7 +93,7 @@
 
         <h3>d) Werbung (Google AdMob)</h3>
         <ul>
-          <li>Zur Auslieferung von Werbung verarbeitet Google AdMob die <strong>Werbe-ID</strong> deines Geräts und Interaktionsdaten. Im EWR fragen wir dazu vorab deine Einwilligung über ein Google-Consent-Formular ab (siehe Abschnitt 7).</li>
+          <li>Zur Auslieferung von Werbung verarbeitet Google AdMob die <strong>Werbe-ID</strong> deines Geräts und Interaktionsdaten. Im EWR fragen wir dazu vorab deine Einwilligung über ein Google-Consent-Formular ab (siehe Abschnitt 8).</li>
         </ul>
 
         <h3>e) Weitere Dienste</h3>
@@ -138,7 +139,7 @@
           <li><strong>Lokale Daten</strong> bleiben gespeichert, bis du sie löschst oder die App deinstallierst.</li>
           <li><strong>Cloud-Daten</strong> (bei Anmeldung) bleiben gespeichert, bis du sie löschst.</li>
           <li><strong>Spielanalysen</strong> (bei Einwilligung) speichert Google gemäß der für das Projekt eingestellten Aufbewahrungsfrist in Google Analytics. Ein Widerruf beendet die Erfassung und setzt die Gerätekennung zurück.</li>
-          <li><strong>Level-Statistik</strong> (bei Einwilligung) löschen wir nach spätestens 12 Monaten; bei Widerruf oder über „Alle meine Daten löschen" sofort.</li>
+          <li><strong>Level-Statistik</strong> (bei Einwilligung) löschen wir nach spätestens 12 Monaten; bei Widerruf oder über „Alle meine Daten löschen" sofort. Ein Versuch, den die App bis zum nächsten Level-Start auf deinem Gerät aufbewahrt, wird dabei ebenfalls gelöscht.</li>
           <li><strong>Feedback</strong> löschen wir, sobald wir es nicht mehr brauchen, spätestens nach 24 Monaten; Kontaktangaben, sobald deine Rückfrage erledigt ist. Auf Wunsch löschen wir dein Feedback sofort; schreib uns dazu ungefähr, wann und was du geschickt hast.</li>
           <li>Im Spiel unter <strong>Einstellungen → Datenschutz</strong> kannst du deine lokalen Daten, deine Level-Statistik und – falls angemeldet – deine Cloud-Daten löschen. Alternativ genügt eine Nachricht an
             <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.</li>
@@ -167,8 +168,11 @@
           Im EWR/UK/CH zeigen wir beim Start ein von Google bereitgestelltes
           Consent-Formular (User Messaging Platform). Stimmst du zu, erhältst du
           personalisierte Werbung; lehnst du ab, erhältst du
-          <strong>nicht-personalisierte Werbung</strong>. Deine Auswahl kannst du in den
-          Geräteeinstellungen unter „Google → Anzeigen" anpassen.
+          <strong>nicht-personalisierte Werbung</strong>. Deine Auswahl kannst du jederzeit
+          im Spiel unter <strong>Einstellungen → Datenschutz → Werbe-Einstellungen</strong>
+          ändern; der Knopf erscheint, wo diese Einwilligung nötig ist. Die Werbe-ID deines
+          Geräts kannst du zusätzlich in den Geräteeinstellungen unter „Google → Anzeigen"
+          zurücksetzen oder löschen.
         </p>
       </div>
 
@@ -185,7 +189,8 @@
         <h2>10. Änderungen</h2>
         <p>
           Wir können diese Erklärung anpassen. Das Datum „Stand" oben zeigt die letzte
-          Aktualisierung.
+          Aktualisierung. Erweitern wir, was die Spielanalysen erfassen, fragen wir dich im
+          Spiel erneut nach deiner Einwilligung.
         </p>
       </div>
 
@@ -197,7 +202,7 @@
       <div class="policy-header">
         <h1>Privacy Policy</h1>
         <p class="policy-meta">
-          Applies to all MR2 Games applications &nbsp;·&nbsp; Last updated: October 2026
+          Applies to all MR2 Games applications &nbsp;·&nbsp; Last updated: November 2026
         </p>
       </div>
 
@@ -235,8 +240,9 @@
 
         <h3>b) Gameplay analytics (optional, only with your consent)</h3>
         <ul>
-          <li>If you agree in the game, we send gameplay data (level attempts, scores, star ratings, play time, power-up usage) <strong>pseudonymously</strong> to <strong>Google Firebase Analytics</strong>. This includes a random device identifier and basic device information such as model, Android version, language and country, but <strong>no name and no email address</strong>. We only evaluate the data in aggregate to improve difficulty and levels.</li>
-          <li><strong>Level statistics</strong>: with the same consent we also store the result of each level attempt (level, outcome, score, moves, matches, ice cracked, special pieces built, boosters used, state of the automatic difficulty adjustment, play time, app version, platform and date without time) in <strong>Google Firebase Firestore</strong> (servers in the EU). The entries only carry a <strong>random number</strong> that the app creates on your device. It is <strong>not linked to your Google account, your email address or the Firebase Analytics device identifier</strong>. We only use the data in aggregate per level to improve difficulty.</li>
+          <li>If you agree in the game, we send gameplay data <strong>pseudonymously</strong> to <strong>Google Firebase Analytics</strong>: level attempts, scores, star ratings, play time, boosters used, whether you were offered extra moves for a video and whether you took them, which videos you watch, when you open the shop and which offers you see, plus the length of your play sessions and the time between them (no time of day). This includes a random device identifier and basic device information such as model, Android version, language and country, but <strong>no name and no email address</strong>.</li>
+          <li><strong>Level statistics</strong>: with the same consent we also store each level attempt in <strong>Google Firebase Firestore</strong> (servers in the EU): level, outcome, score, moves, matches, ice cracked, special pieces built, boosters used, extra moves, state of the automatic difficulty adjustment, play time, app version, platform and date without time, as well as <strong>the moves of the attempt</strong> (which tile in which direction, thinking time, whether a hint was shown, boosters used and their target) and the random seed. This lets us replay an attempt in a simulation. If the app closes in the middle of an attempt, it keeps the attempt on your device and sends it at the next level start. The entries only carry a <strong>random number</strong> that the app creates on your device. It is <strong>not linked to your Google account, your email address or the Firebase Analytics device identifier</strong>.</li>
+          <li><strong>Purpose</strong>: we use both to improve the game: difficulty, the restaurant, offers and ads. To do so we evaluate the data in aggregate and let computer players play like real players to tune new levels in advance. We do not use this data for personalised ads.</li>
           <li>Without your consent, collection is switched off. You can withdraw your consent at any time under <strong>Settings → Privacy</strong>; this also resets the device identifier, and the app deletes all entries of your level statistics and discards the random number.</li>
         </ul>
 
@@ -248,7 +254,7 @@
 
         <h3>d) Advertising (Google AdMob)</h3>
         <ul>
-          <li>To serve ads, Google AdMob processes your device's <strong>advertising ID</strong> and interaction data. In the EEA we ask for your consent first via a Google consent form (see section 7).</li>
+          <li>To serve ads, Google AdMob processes your device's <strong>advertising ID</strong> and interaction data. In the EEA we ask for your consent first via a Google consent form (see section 8).</li>
         </ul>
 
         <h3>e) Other services</h3>
@@ -293,7 +299,7 @@
           <li><strong>Local data</strong> is kept until you delete it or uninstall the app.</li>
           <li><strong>Cloud data</strong> (if signed in) is kept until you delete it.</li>
           <li><strong>Gameplay analytics</strong> (if you consented) are kept by Google according to the retention period set for the project in Google Analytics. Withdrawing consent stops collection and resets the device identifier.</li>
-          <li><strong>Level statistics</strong> (if you consented) are deleted after 12 months at the latest; immediately if you withdraw consent or use "Delete All My Data".</li>
+          <li><strong>Level statistics</strong> (if you consented) are deleted after 12 months at the latest; immediately if you withdraw consent or use "Delete All My Data". An attempt the app keeps on your device until the next level start is deleted as well.</li>
           <li><strong>Feedback</strong> is deleted once we no longer need it, after 24 months at the latest; contact details as soon as your request has been dealt with. On request we delete your feedback right away; just tell us roughly when and what you sent.</li>
           <li>In-game under <strong>Settings → Privacy</strong> you can delete your local data, your level statistics and — if signed in — your cloud data. Alternatively, email
             <a href="mailto:mr2games.mobile@gmail.com">mr2games.mobile@gmail.com</a>.</li>
@@ -321,8 +327,10 @@
         <p>
           In the EEA/UK/CH we show a Google-provided consent form (User Messaging Platform)
           at startup. If you consent, you receive personalised ads; if you decline, you
-          receive <strong>non-personalised ads</strong>. You can adjust your choice in your
-          device settings under "Google → Ads".
+          receive <strong>non-personalised ads</strong>. You can change your choice at any
+          time in the game under <strong>Settings → Privacy → Ad settings</strong>; the button
+          appears wherever this consent is required. You can also reset or delete your
+          device's advertising ID in your device settings under "Google → Ads".
         </p>
       </div>
 
@@ -339,7 +347,8 @@
         <h2>10. Changes</h2>
         <p>
           We may update this policy. The "Last updated" date above indicates the latest
-          revision.
+          revision. If we extend what gameplay analytics collect, we ask for your consent
+          again in the game.
         </p>
       </div>
 
